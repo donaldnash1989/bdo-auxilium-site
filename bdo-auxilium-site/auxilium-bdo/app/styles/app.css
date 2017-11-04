@@ -8,20 +8,30 @@ font-family: 'Rock Salt', cursive;
 */
 
 html, body {
-  background-image: url("images/maxresdefault.jpg");
+
+  background: url("images/maxresdefault.jpg");
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
-  background-color: #000;
+  color: #EEE;
+  font-family: 'Bellefair', serif;
+  text-shadow: 5px 5px 2px #000;
 	margin: 0;
 	padding: 0;
 	height: 100vh;
 	width: 100%;
 }
 
+#container {
+  background: url("images/maxresdefault.jpg");
+  background-position: center;
+  background-size: cover;
+  color: #EEE;
+  font-family: 'Bellefair', serif;
+  text-shadow: 5px 5px 2px #000;
+}
+
 header {
-  color: #FFF;
+  color: #EEE;
   font-size: 3em;
   background-color: rgba(0,0,0,0);
   line-height: 3em;
@@ -51,7 +61,7 @@ header ul li {
 }
 
 header a {
-  color: #FFF;
+  color: #EEE;
   font-size: 0.5em;
   text-decoration: none;
 }
@@ -71,43 +81,101 @@ footer {
   overflow:hidden;
   line-height: 5em;
 }
+
+.intro {
+	height: 100vh;
+	width: 100%;
+	margin: auto;
+	background: url("images/860751.jpg") 50% 50%;
+	background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 1);
+	display: table;
+	top: 0;
+	background-size: cover;
+}
+
+.intro .inner {
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+	max-width: none;
+}
+
+.intro-content {
+	max-width: 600px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.intro-content h1 {
+	font-family: 'Almendra', sans-serif;
+	font-size: 600%;
+	font-weight: 1;
+	color: #EEE;
+	line-height: 50%;
+}
+
+.btn {
+	font-family: 'Bellefair', serif;
+	font-size: 2em;
+	font-weight: 400;
+	color: #CCC;
+	text-transform: uppercase;
+	text-decoration: none;
+	border: solid #CCC 1px;
+	padding: 10px 20px;
+	border-radius: 9px;
+	/*transition: all 0.5s;*/
+}
+
+.btn:hover {
+	color: #888;
+	border-color: #888;
+}
+
 #content {
   background-image: url("images/heidel.jpg");
-}
-
-#content2 {
-  background-image: url("");
-}
-
-#content3 {
-  background-image: url("images/bdo_monster.jpg");
 }
 
 #about-content {
   background-image: url("images/harpies_background.jpg");
 }
 
-.content-blank {
-  background-image: url("");
-  height: 300px;
-}
-
 .content {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: rgba(0,0,0,0);
   height: 500px;
   width: 100%;
   margin: 8em auto 0em;
-  font-family: 'Bellefair', serif;
   display: table;
+}
+
+.content-blank {
+  background-image: url("");
+  height: 200px;
 }
 
 .center-text {
   text-align: center;
-  color: #FFF;
   font-size: 3em;
   display: table-cell;
   vertical-align: middle;
+}
+
+/*--- Media Queries --*/
+@media screen and (max-width: 900px) {
+  .intro-content h1 {
+    font-size: 450%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .intro-content h1 {
+    font-size: 450%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .intro-content h1 {
+    font-size: 200%;
+  }
 }

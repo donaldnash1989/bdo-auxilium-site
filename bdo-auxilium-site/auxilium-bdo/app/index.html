@@ -23,11 +23,24 @@ Author: Donald Nash <donaldnash1989@gmail.com>
     {{content-for "head-footer"}}
   </head>
   <body>
-    {{content-for "body"}}
+    <div id="container">
+      {{content-for "body"}}
 
-    <script src="{{rootURL}}assets/vendor.js"></script>
-    <script src="{{rootURL}}assets/auxilium-bdo.js"></script>
+      <script src="{{rootURL}}assets/vendor.js"></script>
+      <script src="{{rootURL}}assets/auxilium-bdo.js"></script>
 
-    {{content-for "body-footer"}}
+      {{content-for "body-footer"}}
+    </div>
   </body>
+
+  <script>
+  $(window).scroll(function(){
+    parallax();
+  })
+
+  function parallax() {
+     var wScroll = $(window).scrollTop();
+     $('body').css('background-position', 'center ' + (wScroll)*0.2 + 'px')
+  }
+  </script>
 </html>
