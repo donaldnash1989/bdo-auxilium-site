@@ -1,0 +1,113 @@
+
+@import url('https://fonts.googleapis.com/css?family=Almendra|Bellefair|Noto+Sans|Rock+Salt');
+/*
+font-family: 'Almendra', serif;
+font-family: 'Bellefair', serif;
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Rock Salt', cursive;
+*/
+
+html, body {
+  background-image: url("images/maxresdefault.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #000;
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	width: 100%;
+}
+
+header {
+  color: #FFF;
+  font-size: 3em;
+  background-color: rgba(0,0,0,0);
+  line-height: 3em;
+  font-family: 'Almendra', serif;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+header #site-logo {
+  text-shadow: 2px 2px 2px #000;
+  margin-left: 1em;
+  display: inline;
+  text-transform: uppercase;
+}
+
+header ul {
+  position: absolute;
+  right: 0;
+  top: -1em;
+}
+
+header ul li {
+  float: left;
+  list-style-type: none;
+  margin-right: 1em;
+}
+
+header a {
+  color: #FFF;
+  font-size: 0.5em;
+  text-decoration: none;
+}
+
+header a:hover {
+  color: #AAA;
+}
+
+footer {
+  color: #FFF;
+  background-color: rgba(75,75,75,0.2);
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  height: 5em;
+  width: 100%;
+  overflow:hidden;
+  line-height: 5em;
+}
+#content {
+  background-image: url("images/heidel.jpg");
+}
+
+#content2 {
+  background-image: url("");
+}
+
+#content3 {
+  background-image: url("images/bdo_monster.jpg");
+}
+
+#about-content {
+  background-image: url("images/harpies_background.jpg");
+}
+
+.content-blank {
+  background-image: url("");
+  height: 300px;
+}
+
+.content {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(0,0,0,0);
+  height: 500px;
+  width: 100%;
+  margin: 8em auto 0em;
+  font-family: 'Bellefair', serif;
+  display: table;
+}
+
+.center-text {
+  text-align: center;
+  color: #FFF;
+  font-size: 3em;
+  display: table-cell;
+  vertical-align: middle;
+}

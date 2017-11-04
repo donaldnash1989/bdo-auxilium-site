@@ -1,0 +1,19 @@
+{
+  "name": "bdo-auxilium-site",
+  "version": "1.0.0",
+  "description": "Trial run for guild website (guild name: Auxilium)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/donaldnash1989/bdo-auxilium-site.git"
+  },
+  "author": "Donald Nash",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/donaldnash1989/bdo-auxilium-site/issues"
+  },
+  "homepage": "https://github.com/donaldnash1989/bdo-auxilium-site#readme"
+}

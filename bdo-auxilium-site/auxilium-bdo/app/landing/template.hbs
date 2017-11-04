@@ -1,0 +1,75 @@
+{{outlet}}
+<link href="{{rootURL}}assets/css/animate.css" rel="stylesheet"/>
+<link href="{{rootURL}}assets/css/waypoints.css" rel="stylesheet"/>
+<script src="{{rootURL}}assets/js/jquery.waypoints.min.js" type="text/javascript"></script>
+<script src="{{rootURL}}assets/js/waypoints.js" type="text/javascript"></script>
+
+<style>
+.intro {
+	height: 100vh;
+	width: 100%;
+	margin: auto;
+	background-image: url("{{rootURL}}assets/images/860751.jpg");
+  background-color: rgba(0, 0, 0, 1);
+	display: table;
+	top: 0;
+	background-size: cover;
+}
+
+.intro .inner {
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+	max-width: none;
+}
+
+.intro-content {
+	max-width: 600px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.intro-content h1 {
+	font-family: 'Almendra', sans-serif;
+	font-size: 600%;
+	font-weight: 1;
+	color: #EEE;
+	line-height: 50%;
+}
+
+.btn {
+	font-family: 'Bellefair', serif;
+	font-size: 135%;
+	font-weight: 400;
+	color: #CCC;
+	text-transform: uppercase;
+	text-decoration: none;
+	border: solid #CCC 1px;
+	padding: 10px 20px;
+	border-radius: 9px;
+}
+
+.btn:hover {
+	color: #888;
+	border-color: #888;
+}
+</style>
+<section class="intro">
+  <div class="inner">
+    <div class="intro-content">
+      <section class="os-animation" data-os-animation="rubberBand" data-os-animation-delay="0">
+        <h1>Auxilium</h1>
+      </section>
+    <section class="os-animation" data-os-animation="rubberBand" data-os-animation-delay=".1s">
+      <a class="btn" href="#"{{action 'home'}}>enter</a>
+    </section>
+    </div>
+  </div>
+</section>
+
+<script>
+
+$('.btn').on('click', function(){
+  $('#header').removeAttr('hidden');
+})
+</script>
